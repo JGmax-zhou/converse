@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shoppingCart.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+        <div class="header_container">
+            <div class="header_container_left"></div>
+            <ul class="header_container_right">
+                <p><a href="">登录</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">注册</a></p>
+                <li></li>
+                <p><a href="">购物车</a></p>
+                <li class="header_container_count">0</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 通知部分 -->
+    <div id="message">
+        <p>
+            尊敬的顾客您好，我们店铺是不会泄露您的消费信息的，请放心。另外我们也不会要求获取、收集、使用任何与消费者金融消费类（如：信用卡）信息，如果接到以上信息电话，是属于诈骗电话，请勿相信，以防钱财损失。如您对订单有疑问，请联系在线客服。
+        </p>
+        <div class="close">X</div>
+    </div>
+    <div id="shopping">
+        <ul class="shopping_line">
+            <li>
+                <p>我的购物车</p>
+                <p></p>
+            </li>
+            <li>
+                <p>填写订单信息</p>
+                <p></p>
+            </li>
+            <li>
+                <p>成功提交订单</p>
+                <p></p>
+            </li>
+            <div class="line"></div>
+        </ul>
+        <div class="remind">
+            <h3>您的购物车还是空的</h3>
+            <p>马上去购物</p>
+        </div>
+
+        <div id="user_car">
+            <h3>您的购物车:<span>n</span>件商品</h3>
+            <div class="shop_info">
+                <p class="shop_choose">
+                    <span>全选</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>您已选中<i style="color: #b63330;font-style: normal;">n</i>件商品</span>
+                </p>
+                <ul class="shop_list">
+                    <li>
+                        <div class="shop_list_top">
+                            <div class="shop_list_box">
+                                <div></div>
+                            </div>
+                            <div class="shop_list_del">
+                                <span>编辑</span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+                        <div class="shop_list_bottom">
+                            <div class="shop_img">
+                                <img src="https://image.converse.com.cn/resources/product/10020885102/10020885102_1M_NEW.png?2020072304" alt="">
+                            </div>
+                            <div class="shop_information">
+                                <h2>【男的】Plaid OS Pocket Tee</h2>
+                                <p>型号：<span class="shop_type">10020885102</span></p>
+                                <p>颜色：<span class="shop_color">白色</span></p>
+                                <p>尺码：<span class="shop_size">170/96A</span></p>
+                            </div>
+                            <div class="shop_item">
+                                <p class="shop_price">¥219.00</p>
+                                <div class="shop_num">
+                                    <span>数量</span>
+                                    <i></i>
+                                    <input type="text">
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <p class="shop_choose" style="border-top: 1px solid #ccc;">
+                <span>全选</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>您已选中<i style="color: #b63330;font-style: normal;">n</i>件商品</span>
+            </p>
+        </div>
+        <div class="shop_pay">
+            <div>
+                <div class="tit">商品原价：</div>
+                <div class="info">¥438.00</div>
+            </div>
+            <div>
+                <div class="tit">店铺活动：</div>
+                <div class="info red">¥0.00</div>
+            </div>
+            <div class="last">
+                <div class="tit" style="font-size: 24px;">商品金额：</div>
+                <div class="info red" style="font-size: 24px;">¥438.00</div>
+            </div>
+            <p class="red">*<span style="color: black;">不含运费及优惠券折扣</span></p>
+            <p class="red">*以会员身份结算可享受免费配送服务</p>
+            <div class="pay_btn">结算</div>
+        </div>
+    </div>
+
+    <!-- 关注CONVERSE -->
+    <div id="attention">
+        <h2>关注CONVERSE</h2>
+        <p>Converse同时活跃在各类社交网络平台，点击下列你所喜爱的常用社交平台，密切关注Converse的最新产品与资讯。</p>
+        <a href="script:;" class="left"></a>
+        <a href="script:;" class="right"></a>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script src="script/index.js"></script>
+    <script src="script/login.js"></script>
+</body>
+
+</html>

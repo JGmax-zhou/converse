@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+        <div class="header_container">
+            <div class="header_container_left"></div>
+            <ul class="header_container_right">
+                <p class="user"><a href="javascirpt:;">登录</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="javascirpt:;">注册</a></p>
+                <li></li>
+                <p><a href="">购物车</a></p>
+                <li class="header_container_count">0</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 注册登录隐藏部分 -->
+    <!-- 注册部分 -->
+    <section id="user">
+        <div class="sjx"></div>
+        <!-- 登录页面 -->
+        <div id="user_login">
+            <div class="user_login_left">
+                <p>还未注册?</p>
+                <a href="javascirpt:;">
+                    <div class="login_left_more">注册用户</div>
+                </a>
+            </div>
+            <div class="user_login_right">
+                <h3>已经成为会员</h3>
+                <p><input type="text" placeholder="邮箱/手机"></p>
+                <p><input type="text" placeholder="账号密码"></p>
+                <p><input type="text" placeholder="请输入验证码" class="yzm"><span>ABCD</span></p>
+                <p style="text-align: right;">
+                    <a href="script:;">换一张</a>
+                </p>
+                <p class="checkbox"><input type="checkbox">一旦登录，即表明您同意匡威更新的 隐私政策和使用规则</p>
+                <a href="javascirpt:;">
+                    <div class="login_left_more">登录</div>
+                </a>
+                <p class="checkbox"><input type="checkbox">记住登录名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">忘记密码</a></p>
+            </div>
+        </div>
+        <!-- 注册页面 -->
+        <div id="user_registry">
+            <ul class="user_registry_top">
+                <li class="cell">
+                    <p>手机号码<b style="color: red;">*</b></p>
+                    <p>
+                        <input type="text" placeholder="166xxxxx3333">
+                    </p>
+                    <p class="error"><span style="color: red;">请输入手机号码!</span></p>
+                </li>
+                <li class="email">
+                    <p>邮箱<b style="color: red;">*</b></p>
+                    <p>
+                        <input type="text" placeholder="admin@converse.com">
+                    </p>
+                    <p class="error"><span style="color: red;">请输入电子邮箱地址!</span></p>
+                </li>
+                <li class="sex">
+                    <p>性别<b style="color: red;">*</b></p>
+                    <div class="fk">
+                        <span>男的</span>
+                        <span>女的</span>
+                    </div>
+                    <p></p>
+                </li>
+            </ul>
+            <ul class="user_registry_top">
+                <li class="pass">
+                    <p>输入密码<b style="color: red;">*</b></p>
+                    <p>
+                        <input type="text" placeholder="密码至少八位字符">
+                    </p>
+                    <p class="error"><span style="color: red;">请输入密码!</span></p>
+                </li>
+                <li class="confirmpass">
+                    <p>确认密码<b style="color: red;">*</b></p>
+                    <p>
+                        <input type="text" placeholder="请再次输入密码">
+                    </p>
+                    <p class="error"><span style="color: red;">请再次输入密码</span></p>
+                </li>
+                <li class="last">
+                    <p> 生日（年-月-日）<b style="color: red;">*</b></p>
+                    <p>
+                        <input type="text" placeholder="请输入生日">
+                    </p>
+                    <p></p>
+                </li>
+            </ul>
+            <ul class="user_registry_top">
+                <li>
+                    <p>验证码<b style="color: red;">*</b></p>
+                    <div style="line-height: 40px;">
+                        <input type="text" placeholder="请输入验证码" style="width: 138px;vertical-align: middle;">
+                        <span style="display: inline-block;width: 140px;height:32px;vertical-align: middle;font-size:25px ;">ABCD</span>
+                    </div>
+                    <div class="error">
+                        <div><span style="color: red;">请输入正确的验证码</span></div>
+                        <div></div>
+                    </div>
+                </li>
+                <li>
+                    <p>短信验证码</p>
+                    <div style="line-height: 40px;">
+                        <input type="text" placeholder="请输入短信验证码" style="width: 138px;vertical-align: middle;">
+                        <span class="error" style="display: inline-block;width: 140px;height:32px;line-height:32px;vertical-align: middle;background-color: #ccc;text-align:center;color: white;">发送短信验证码</span>
+                    </div>
+                    <div>
+                        <div class="error">
+                            <span style="color: red;">您填写的短信验证码有误，请重新输入</span>
+                        </div>
+                        <div></div>
+                    </div>
+                </li>
+                <li class="last">
+                    <p class="ckb">一旦创建账户，即表明您同意匡威更新的隐私政策和使用规则</p>
+                    <p class="registered_user">注册用户</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 导航位置 -->
+    <div id="nav">
+        <ul class="nav_container">
+            <li>男的
+                <i></i>
+                <div class="nav_boy">
+                    <ol>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_snrkers_men_200715_rev1.jpg?2020072304" alt="">
+                                <a href="list.html" target="_blank">踩的</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_app_men_200715.jpg?2020072304" alt="">
+                                <a href="">穿的</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_tee_men_200715.jpg?2020072304" alt="">
+                                <a href="">T恤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_acc_men_200715.jpg?2020072304" alt="">
+                                <a href="">戴的</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/new_icon.jpg?2020072304" alt="">
+                                <a href=""> 新产品</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/discount_icon.jpg?2020072304" alt="">
+                                <a href="">优惠</a>
+                            </p>
+                        </li>
+                    </ol>
+                    <hr></hr>
+                    <ol>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_core_men_200315.png?2020072304" alt="">
+                                <a href="">经典款</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_jp_man_200715.jpg?2020072304" alt="">
+                                <a href="">JACK PURCELL</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_70_man_200715.jpg?2020072304" alt="">
+                                <a href="">CHUCK 70</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_as_man_200715.jpg?2020072304" alt="">
+                                <a href="">ALL STAR</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_os_man_200715.jpg?2020072304" alt="">
+                                <a href="">ONE STAR</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_cons_man_200715.jpg?2020072304" alt="">
+                                <a href="">CONS</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_pl_man_200715.jpg?2020072304" alt="">
+                                <a href="">PRO LEATHER</a>
+                            </p>
+                        </li>
+
+                    </ol>
+                </div>
+            </li>
+            <li>女的
+                <i></i>
+                <div class="nav_girl">
+                    <ol>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_snrkers_women_200715.jpg?2020072304" alt="">
+                                <a href="">踩的</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_app_women_200715.jpg?2020072304" alt="">
+                                <a href="">穿的</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_tee_women_200715.jpg?2020072304" alt="">
+                                <a href="">T恤</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_acc_women_200715.jpg?2020072304" alt="">
+                                <a href="">戴的</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/new_icon.jpg?2020072304" alt="">
+                                <a href=""> 新产品</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/discount_icon.jpg?2020072304" alt="">
+                                <a href="">优惠</a>
+                            </p>
+                        </li>
+                    </ol>
+                    <hr></hr>
+                    <ol>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_core_women_200315.png?2020072304" alt="">
+                                <a href="">经典款</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_jp_woman_200715.jpg?2020072304" alt="">
+                                <a href="">JACK PURCELL</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_70_woman_200715.jpg?2020072304" alt="">
+                                <a href="">CHUCK 70</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_as_woman_200715.jpg?2020072304" alt="">
+                                <a href="">ALL STAR</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_os_woman_200715.jpg?2020072304" alt="">
+                                <a href="">ONE STAR</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_cons_woman_200715.jpg?2020072304" alt="">
+                                <a href="">CONS</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <img src="https://image.converse.com.cn/static/home/nav/nav_pl_woman_200715.jpg?2020072304" alt="">
+                                <a href="">PRO LEATHER</a>
+                            </p>
+                        </li>
+
+                    </ol>
+                </div>
+            </li>
+            <li>儿童
+                <i></i>
+            </li>
+            <li>店铺分布
+                <i></i>
+            </li>
+            <li>发货发售
+                <i></i>
+            </li>
+            <li>会员闪促
+                <i></i>
+            </li>
+        </ul>
+    </div>
+    <!-- 通知部分 -->
+    <div id="message">尊敬的客户，新疆近期因受疫情影响，部分道路及区域管控较严，所有发往新疆方向的快递，派送时效将会有所延迟，烦请耐心等待，感谢您的理解和配合。</div>
+    <!-- 轮播图部分 -->
+    <div id="banner">
+        <ul>
+            <li class="show"><img src="https://image.converse.com.cn/static/kv/pc/member_day_kv_pc_200723_rev.jpg" alt=""></li>
+            <li><img src="https://image.converse.com.cn/static/kv/pc/space_hippie_kv_pc_200723.jpg" alt=""></li>
+            <li><img src="https://image.converse.com.cn/static/kv/pc/mx_kv_pc_200714.jpg" alt=""></li>
+            <li><img src="https://image.converse.com.cn/static/kv/pc/ssnl_converse_kv_pc_200710.jpg" alt=""></li>
+            <li><img src="https://image.converse.com.cn/static/kv/pc/bb_rivals_kv_pc_200802.jpg" alt=""></li>
+        </ul>
+        <div class="banner_left">
+            &lt;
+        </div>
+        <div class="banner_right">
+            &gt;
+        </div>
+    </div>
+    <!-- 轮播图切换部分 -->
+    <ul id="banner_menu">
+        <li>会员闪促</li>
+        <li>CRATERMIX</li>
+        <li>MIX & MATCH</li>
+        <li>CONVERSE COLOR</li>
+        <li>SOUL COLLECTION</li>
+    </ul>
+    <!-- 热卖单品 -->
+    <div id="Hot_title">热卖单品</div>
+
+    <!-- TAB切换按钮部分 -->
+    <ul id="Hot_button">
+        <li>
+            <h2>男的踩的</h2>
+            <img src="https://image.converse.com.cn/static/home/homepage/top_02_1203.jpg?2020072304" alt="">
+        </li>
+        <li>
+            <h2>女的踩的</h2>
+            <img src="https://image.converse.com.cn/static/home/homepage/top_01_1203.jpg?2020072304" alt="">
+        </li>
+        <li>
+            <h2>穿的</h2>
+            <img src="https://image.converse.com.cn/static/home/homepage/top_01_05.jpg?2020072304" alt="">
+        </li>
+        <li>
+            <h2>戴的</h2>
+            <img src="https://image.converse.com.cn/static/home/homepage/top_01_07.jpg?2020072304" alt="">
+        </li>
+    </ul>
+    <!-- TAB切换部分 -->
+    <div id="HOt_TAB_ALL">
+        <div class="sjx"></div>
+        <div class="HOt_TAB_item show">
+            <ol id="Hot_show">
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/168695C244/168695C244_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/168696C001/168696C001_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/168976C244/168976C244_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Jack Purcell</p>
+                    <p>¥539.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/168618C036/168618C036_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+            </ol>
+            <ol id="Hot_show" style="border-bottom: 0;">
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/168505C244/168505C244_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥539.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/158369C001/158369C001_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥540.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/168604C467/168604C467_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Jack Purcell</p>
+                    <p>¥599.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/169764C102/169764C102_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥599.00</p>
+                </li>
+            </ol>
+        </div>
+        <div class="HOt_TAB_item">
+            <ol id="Hot_show">
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/568497C001/568497C001_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/168605C102/168605C102_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/569236C001/569236C001_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Jack Purcell</p>
+                    <p>¥539.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/568801C745/568801C745_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+            </ol>
+            <ol id="Hot_show" style="border-bottom: 0;">
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/568622C690/568622C690_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥539.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/568800C281/568800C281_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥540.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/568926C610/568926C610_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Jack Purcell</p>
+                    <p>¥599.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/168603C451/168603C451_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥599.00</p>
+                </li>
+            </ol>
+        </div>
+        <div class="HOt_TAB_item">
+            <ol id="Hot_show">
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10020880745/10020880745_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10020519001/10020519001_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10020885102/10020885102_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Jack Purcell</p>
+                    <p>¥539.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10019928333/10019928333_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+            </ol>
+            <ol id="Hot_show" style="border-bottom: 0;">
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10019593315/10019593315_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥539.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10018389001/10018389001_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥540.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10018822207/10018822207_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Jack Purcell</p>
+                    <p>¥599.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10018387207/10018387207_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥599.00</p>
+                </li>
+            </ol>
+        </div>
+        <div class="HOt_TAB_item">
+            <ol id="Hot_show">
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10019901745/10019901745_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10020538001/10020538001_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10019908001/10019908001_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Jack Purcell</p>
+                    <p>¥539.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10020540610/10020540610_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥639.00</p>
+                </li>
+            </ol>
+            <ol id="Hot_show" style="border-bottom: 0;">
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10019855467/10019855467_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥539.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10020555690/10020555690_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥540.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10008476690/10008476690_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Jack Purcell</p>
+                    <p>¥599.00</p>
+                </li>
+                <li>
+                    <img src="https://image.converse.com.cn/resources/product/10018890001/10018890001_1B_NEW.png?2020072304" alt="">
+                    <p>【男女同款】Chuck 70</p>
+                    <p>¥599.00</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <!-- 更多部分 -->
+    <a href="list.html"><div id = 'MORE' class="login_left_more">查看所有<span>男的踩的</span>最新商品</div></a>
+
+    <!-- 新品推荐部分 -->
+    <div id="NEW_title">新品推荐</div>
+    <div class="NEW_item">
+        <ol id="NEW_show">
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168695C244/168695C244_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Chuck 70</p>
+                <p>¥639.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168746C102/168746C102_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Chuck Taylor All Star</p>
+                <p>¥499.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/169084C117/169084C117_1B_NEW.png?2020072304" alt="">
+                <p>【男的】All Star Pro BB</p>
+                <p>¥999.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168696C001/168696C001_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Chuck 70</p>
+                <p>¥639.00</p>
+            </li>
+        </ol>
+        <ol id="NEW_show">
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168605C102/168605C102_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Chuck 70</p>
+                <p>¥599.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/158369C001/158369C001_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Converse Disrupt CX Hi</p>
+                <p>¥899.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168563C036/168563C036_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Converse Disrupt CX Hi</p>
+                <p>¥839.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168792C079/168792C079_1B_NEW.png?2020072304" alt="">
+                <p>【男的】Converse G4</p>
+                <p>¥799.00</p>
+            </li>
+        </ol>
+        <ol id="NEW_show">
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168791C055/168791C055_1B_NEW.png?2020072304" alt="">
+                <p>【男的】Converse G4</p>
+                <p>¥869.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/169085C189/169085C189_1B_NEW.png?2020072304" alt="">
+                <p>【男的】All Star Pro BB</p>
+                <p>¥939.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/568925C244/568925C244_1B_NEW.png?2020072304" alt="">
+                <p>【女的】Chuck Taylor All Star</p>
+                <p>¥499.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168747C244/168747C244_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Chuck Taylor All Star</p>
+                <p>¥469.00</p>
+            </li>
+        </ol>
+        <ol id="NEW_show" style="border-bottom: 0;";>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/569236C001/569236C001_1B_NEW.png?2020072304" alt="">
+                <p>【女的】Chuck 70</p>
+                <p>¥599.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168578C805/168578C805_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Chuck Taylor All Star</p>
+                <p>¥399.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168615C805/168615C805_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Chuck 70</p>
+                <p>¥569.00</p>
+            </li>
+            <li>
+                <img src="https://image.converse.com.cn/resources/product/168614C501/168614C501_1B_NEW.png?2020072304" alt="">
+                <p>【男女同款】Chuck 70</p>
+                <p>¥569.00</p>
+            </li>
+        </ol>
+    </div>
+
+    <!-- 接头先型 -->
+    <div id="corner">
+        <div class="corner_title">接头先型</div>
+        <div class="corner_left">
+            <a href="javascript:;"></a>
+            <img src="https://image.converse.com.cn/static/touts/PC_9-KIDS_200708.jpg" alt="">
+            <h3>KIDS</h3>
+            <div class="corner_more">查看更多</div>
+        </div>
+        <div class="corner_right">
+            <a href="javascript:;"></a>
+            <img src="https://image.converse.com.cn/static/touts/PC_8-APP_200708.jpg" alt="">
+            <h3>APPAREL</h3>
+            <div class="corner_more">查看更多</div>
+        </div>
+    </div>
+
+    <!-- 玩转潮流 -->
+    <div id="play">
+        <div class="play_title">至酷精选 玩转潮流</div>
+        <div class="play_left">
+            <a href="javascript:;"></a>
+            <img src="https://image.converse.com.cn/static/touts/PC_7-JP_200701.jpg" alt="">
+            <h3>JACK PURCELL</h3>
+            <div class="corner_more">查看更多</div>
+        </div>
+        <div class="play_center">
+            <a href="javascript:;"></a>
+            <img src="https://image.converse.com.cn/static/touts/PC_5-CT70_200701.jpg" alt="">
+            <h3>CHUCK 70</h3>
+            <div class="corner_more">查看更多</div>
+        </div>
+        <div class="play_right">
+            <a href="javascript:;"></a>
+            <img src="https://image.converse.com.cn/static/touts/PC_6-AS_200701.jpg" alt="">
+            <h3>CHUCK TAYLOR ALL Star</h3>
+            <div class="corner_more">查看更多</div>
+        </div>
+    </div>
+    <!-- 关注CONVERSE -->
+    <div id="attention">
+        <h2>关注CONVERSE</h2>
+        <p>Converse同时活跃在各类社交网络平台，点击下列你所喜爱的常用社交平台，密切关注Converse的最新产品与资讯。</p>
+        <a href="script:;" class="left"></a>
+        <a href="script:;" class="right"></a>
+    </div>
+    <!-- 聊聊吧 -->
+    <div id="likeyou">11</div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script src="script/index.js"></script>
+    <script src="script/login.js"></script>
+    <script src="script/registry.js"></script>
+</body>
+
+</html>

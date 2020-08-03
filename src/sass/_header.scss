@@ -1,0 +1,352 @@
+@charset "utf-8";
+// 文件引入
+@import 'more.scss' ;
+// 公共文件
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+// 变量区域
+$sprite:url('https://image.converse.com.cn/images/commons/sprites_header_footer.png');
+$colorred:#b63330;
+$colorwhite:white;
+// mixin函数区域
+
+// 头部区域
+#header {
+    color: $colorwhite;
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    height: 80px;
+    font-size: 12px;
+    .header_container_left {
+        float: left;
+        height: 80px;
+        width: 200px;
+        background: url('https://image.converse.com.cn/images/commons/header-footer-new3.png') center center no-repeat;
+    }
+    .header_container_right {
+        float: right;
+        text-align: center;
+        li {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            float: left;
+            margin: 25px 20px;
+            cursor: pointer;
+            &:nth-child(2) {
+                background: $sprite -96px -85px;
+            }
+            &:nth-child(2):hover {
+                background: $sprite -137px -66px;
+            }
+            &:nth-child(5) {
+                background: $sprite -95px -54px;
+            }
+            &:nth-child(5):hover {
+                background: $sprite -137px -34px;
+            }
+            &:nth-child(6) {
+                background: $sprite -137px -161px;
+            }
+            &:nth-child(6):hover {
+                background: $sprite -137px -3px;
+            }
+            &:nth-child(7) {
+                background: $sprite -169px -161px;
+            }
+            &:nth-child(7):hover {
+                background: $sprite -169px -3px;
+            }
+        }
+        p {
+            height: 80px;
+            line-height: 80px;
+            float: left;
+            a {
+                color: inherit;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .header_container_count {
+            background-color: $colorred;
+            line-height: 30px;
+        }
+    }
+}
+
+// 登录注册隐藏部分
+#user {
+    width: 100%;
+    // height: 397px;
+    // height: 0;
+    position: relative;
+    font-size: 25px;
+    overflow: hidden;
+    // 顶部三角形
+    .sjx {
+        position: absolute;
+        top: 0px;
+        left: 1074px;
+        border: 15px solid;
+        border-color: black transparent transparent transparent;
+    }
+    // 登录部分
+    #user_login {
+        width: 1000px;
+        height: 397px;
+        margin: 40px auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        // 登录左边部分
+        .user_login_left {
+            height: 317px;
+            width: 200px;
+            border-right: 1px solid black;
+            padding-left: 300px;
+            float: left;
+            p {
+                margin-bottom: 10px;
+            }
+            .login_left_more{
+                @include more()
+            }
+        }
+        // 登录右边部分
+        .user_login_right {
+            height: 297px;
+            width: 300px;
+            float: left;
+            padding-left: 60px;
+            font-size: 14px;
+            p {
+                width: 250px;
+            }
+            h3 {
+                font-size: 25px;
+                font-weight: normal;
+            }
+            input {
+                outline: none;
+                padding: 5px 10px;
+                margin: 10px 0px;
+                border: 1px solid #ccc;
+                width: 228px;
+                height: 25px;
+            }
+            .yzm {
+                width: 80px;
+                vertical-align: middle;
+            }
+            span {
+                display: inline-block;
+                margin-left: 10px;
+                width: 80px;
+                height: 40px;
+                vertical-align: middle;
+                background-color: white;
+                line-height: 40px;
+                text-align: center;
+                font-size: 25px;
+                font-style: italic;
+                cursor: pointer;
+            }
+            .login_left_more{
+                @include more(250px);
+            }
+            .checkbox {
+                line-height: 25px;
+                font-size: 12px;
+                input {
+                    width: 20px;
+                    height: 20px;
+                    margin: 0;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        height: 40px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    // 注册部分
+    #user_registry {
+        width: 1000px;
+        height: 317px;
+        font-size: 12px;
+        margin: 40px auto;
+        display: none;
+        input {
+            padding-left: 10px;
+            width: 288px;
+            height: 30px;
+            border: 1px solid #ccc;
+        }
+        .user_registry_top {
+            height: 95px;
+            margin-bottom: 10px;
+            display: flex;
+            li {
+                width: 300px;
+                height: 95px;
+                margin-right: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .last,.sex{
+                margin-right: 0;
+                span {
+                    display: inline-block;
+                    height: 40px;
+                    line-height: 40px;
+                    width: 140px;
+                    vertical-align: middle;
+                    &:before {
+                        @extend.ckb
+                    }
+                }
+                .ckb:before {
+                    content: '';
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid #ccc;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+                .registered_user {
+                    width: 300px;
+                    height: 40px;
+                    border: 1px solid black;
+                    color: $colorwhite;
+                    background-color: #ccc;
+                    line-height: 40px;
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+            }
+            .error {
+                opacity: 0;
+            }
+            p {
+                width: 300px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+// 导航部分
+#nav {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    font-size: 18px;
+    color: $colorwhite;
+    position: relative;
+    .nav_container {
+        width: 804px;
+        height: 50px;
+        margin: auto;
+        &>li {
+            float: left;
+            padding: 6px 40px 0px;
+            height: 44px;
+            i {
+                content: '';
+                margin: auto;
+                display: block;
+                margin-top: 2px;
+                width: 1px;
+                /* height: 12px; */
+                border: 6px solid;
+                border-color: white transparent transparent transparent;
+            }
+            &:first-child:hover .nav_boy {
+                display: block;
+            }
+            &:nth-child(2):hover .nav_girl {
+                display: block;
+            }
+        }
+        .nav_boy {
+            width: 100%;
+            height: 272px;
+            position: absolute;
+            background-color: white;
+            left: 0;
+            top: 50px;
+            z-index: 1;
+            text-align: center;
+            padding-left: 300px;
+            display: none;
+            &>hr {
+                position: absolute;
+                left: 0;
+                top: 135px;
+                z-index: 1;
+                width: 100%;
+            }
+            li {
+                float: left;
+                p {
+                    position: relative;
+                    a {
+                        position: absolute;
+                        width: 130px;
+                        height: 130px;
+                        line-height: 230px;
+                        left: 0px;
+                        top: 0;
+                        color: black;
+                        &:hover {
+                            color: gray;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            ol {
+                &:nth-child(1) {
+                    height: 130px;
+                    position: absolute;
+                    top: 0;
+                }
+                &:nth-child(3) {
+                    height: 130px;
+                    position: absolute;
+                    top: 132px;
+                }
+            }
+        }
+        .nav_girl {
+            @extend .nav_boy;
+        }
+    }
+}

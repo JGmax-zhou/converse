@@ -1,0 +1,68 @@
+// 通知部分
+#message {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 12px;
+}
+
+//部分
+#banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .show {
+        opacity: 1;
+    }
+    .banner_left {
+        top: 35%;
+        width: 100px;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+        position: absolute;
+        line-height: 100px;
+        font-size: 50px;
+        text-align: center;
+        cursor: pointer;
+        left: 5px;
+        a {
+            color: white;
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .banner_right {
+        @extend .banner_left;
+        left: auto;
+        right: 5px;
+    }
+}
+
+
+/* banner切换部分 */
+
+#banner_menu {
+    width: 600px;
+    height: 36px;
+    margin: 8px auto;
+    color: #ccc;
+    font-size: 12px;
+    cursor: pointer;
+    li {
+        text-align: center;
+        margin-right: 10px;
+        float: left;
+    }
+}

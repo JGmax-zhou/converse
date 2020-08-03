@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 头部部分 */
+
+#header {
+    padding: 0px 84px;
+    background-color: black;
+    height: 80px;
+}
+
+.header_container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header_container_left {
+    float: left;
+    height: 100%;
+    width: 200px;
+    background: url('https://image.converse.com.cn/images/commons/header-footer-new3.png') center center no-repeat;
+}
+
+.header_container_right {
+    float: right;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.header_container_right p {
+    height: 80px;
+    line-height: 80px;
+    float: left;
+}
+
+.header_container_right p a:hover {
+    text-decoration: underline;
+}
+
+.header_container_right p>a {
+    color: white;
+}
+
+.header_container_right li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    margin: 25px 20px;
+    background-color: gray;
+}
+
+.header_container_right li:nth-child(2) {
+    background: url('https://image.converse.com.cn/images/commons/sprites_header_footer.png')-96px -85px;
+}
+
+.header_container_right li:nth-child(2):hover {
+    background: url('https://image.converse.com.cn/images/commons/sprites_header_footer.png')-137px -66px;
+}
+
+.header_container_right li:nth-child(5) {
+    background: url('https://image.converse.com.cn/images/commons/sprites_header_footer.png')-95px -54px;
+}
+
+.header_container_right li:nth-child(5):hover {
+    background: url('https://image.converse.com.cn/images/commons/sprites_header_footer.png')-137px -34px;
+}
+
+.header_container_right li:nth-child(6) {
+    background: url('https://image.converse.com.cn/images/commons/sprites_header_footer.png')-137px -161px;
+}
+
+.header_container_right li:nth-child(6):hover {
+    background: url('https://image.converse.com.cn/images/commons/sprites_header_footer.png')-137px -3px;
+}
+
+.header_container_right li:nth-child(7) {
+    background: url('https://image.converse.com.cn/images/commons/sprites_header_footer.png')-169px -161px;
+}
+
+.header_container_right li:nth-child(7):hover {
+    background: url('https://image.converse.com.cn/images/commons/sprites_header_footer.png')-169px -3px;
+}
+
+.header_container_right .header_container_count {
+    background-color: #b63330;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/* 导航部分 */
+
+#nav {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    color: white;
+    position: relative;
+}
+
+.nav_container {
+    width: 804px;
+    height: 50px;
+    margin: auto;
+}
+
+.nav_container li {
+    float: left;
+    margin: 6px 40px;
+    font-size: 18px;
+}
+
+.nav_container li i {
+    content: '';
+    margin: auto;
+    display: block;
+    margin-top: 2px;
+    width: 1px;
+    /* height: 12px; */
+    border: 6px solid;
+    border-color: white transparent transparent transparent;
+}
+
+
+/* 导航栏隐藏部分 */
+
+.nav_boy,
+.nav_girl {
+    width: 100%;
+    height: 262px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 130px;
+    z-index: 1;
+    text-align: center;
+    padding-left: 300px;
+    display: none;
+}
+
+.nav_boy ol:nth-child(1),
+.nav_girl ol:nth-child(1) {
+    height: 130px;
+    position: absolute;
+    top: 0;
+}
+
+.nav_boy>hr,
+.nav_girl>hr {
+    position: absolute;
+    left: 0;
+    top: 130px;
+    height: 2px;
+    width: 100%;
+}
+
+.nav_boy ol:nth-child(3),
+.nav_girl ol:nth-child(3) {
+    height: 130px;
+    position: absolute;
+    top: 132px;
+}
+
+.nav_boy li,
+.nav_girl li {
+    float: left;
+}
+
+.nav_boy li>p,
+.nav_girl li>p {
+    position: relative;
+}
+
+.nav_boy li>p a,
+.nav_girl li>p a {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    line-height: 230px;
+    left: 0px;
+    top: 0;
+    color: black;
+}
+
+.nav_boy li>p a:hover,
+.nav_girl li>p a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+
+/* 标题部分 */
+
+#List_title {
+    width: 970px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px auto;
+}
+
+#List_title::before {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 300px;
+    background-color: gray;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+#List_title::after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 300px;
+    background-color: gray;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+
+/* 主题内容部分 */
+
+section {
+    width: 1000px;
+    /* height: 6070px; */
+    height: auto;
+    display: flex;
+    margin: auto;
+}
+
+
+/* 左边部分 */
+
+#dropdown {
+    width: 250px;
+    /* height: 415px; */
+    /* height: auto; */
+}
+
+.dropdown_top {
+    width: 202px;
+    height: 81px;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+    margin-bottom: 40px;
+}
+
+.dropdown_top>p {
+    width: 180px;
+    height: 49px;
+    line-height: 49px;
+    border-bottom: 1px solid #ccc;
+}
+.dropdown_bottom dl {
+    width: 202px;
+    height: 27px;
+    /* height: auto; */
+    padding: 10px 0px;
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.dropdown_bottom dt {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: url('https://image.converse.com.cn/images/commons/plus.png')right center no-repeat;
+}
+
+.dropdown_bottom dd {
+    margin-bottom: 10px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.dropdown_bottom dd::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.dropdown_bottom li {
+    width: 39px;
+    height: 33px;
+    display: inline-block;
+    line-height: 37px;
+    margin-right: 2px;
+    margin-bottom: 8px;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.dropdown_bottom li:hover {
+    padding: 0px;
+    width: 39px;
+    height: 33px;
+    border: 3px solid black;
+}
+
+.dropdown_bottom li:nth-of-type(4n) {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* 右边部分 */
+
+#product_list {
+    width: 750px;
+    /* height: 6070px; */
+    height: auto;
+}
+
+.product_List_title {
+    display: flex;
+}
+
+.product_List_title li {
+    padding: 3px 15px;
+}
+
+.product_List_title .default {
+    background: black;
+    color: white;
+}
+
+.product_List_title .line {
+    border: 1px solid #ccc;
+}
+
+.line i {
+    display: inline-block;
+    width: 7px;
+    height: 16px;
+}
+
+.line i::before {
+    content: '';
+    border: solid;
+    display: block;
+    border-width: 0 7px 8px;
+    margin-left: -3.5px;
+    border-color: transparent transparent black transparent;
+}
+
+.line i::after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 12px;
+    background-color: black;
+}
+
+
+/* 商品列表 */
+
+.NEW_item {
+    width: 750px;
+    height: auto;
+}
+
+#NEW_show {
+    width: 750px;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#NEW_show li {
+    width: 230px;
+    height: 303px;
+    text-align: center;
+    margin: 25px 3px;
+    font-size: 12px;
+}
+
+#NEW_show li:hover {
+    /* border: 1px solid gray; */
+    transition: all 0.1s;
+    box-shadow: 0px 0px 3px;
+}
+
+#NEW_show li p {
+    margin: 10px 0px;
+}
+
+#NEW_show li p:last-child {
+    margin-top: 30px;
+}
+
+#NEW_show li img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* 关注CONVERSE */
+
+#attention {
+    margin-top: 80px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 80px;
+    color: white;
+    background-color: gray;
+}
+
+#attention>.left {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin: 0px 10px;
+    background: url('https://image.converse.com.cn/images/homepage/share.png')75px 0px;
+}
+
+#attention>.left:hover {
+    background-position: 0px 0px
+}
+
+#attention>.right {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin: 0px 10px;
+    background: url('https://image.converse.com.cn/images/homepage/share.png')75px -75px;
+}
+
+#attention>.right:hover {
+    background-position: 0px -75px
+}
