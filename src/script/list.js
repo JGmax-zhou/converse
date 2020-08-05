@@ -119,7 +119,7 @@
         })
         $NEW_show.append(str)
 
-        //2.添加懒加载
+        //添加懒加载
         $(function() {
             $("img.lazy").lazyload({ effect: "fadeIn" });
         });
