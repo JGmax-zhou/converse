@@ -268,6 +268,7 @@ section {
     line-height: 49px;
     border-bottom: 1px solid #ccc;
 }
+
 .dropdown_bottom dl {
     width: 202px;
     height: 27px;
@@ -354,10 +355,12 @@ section {
     border: 1px solid #ccc;
 }
 
-.line i {
-    display: inline-block;
+.line i,
+.line b {
+    /* display: inline-block; */
     width: 7px;
     height: 16px;
+    display: none;
 }
 
 .line i::before {
@@ -369,7 +372,17 @@ section {
     border-color: transparent transparent black transparent;
 }
 
-.line i::after {
+.line b::after {
+    content: '';
+    border: solid;
+    display: block;
+    border-width: 8px 7px 0px;
+    margin-left: -3.5px;
+    border-color: black transparent transparent transparent;
+}
+
+.line i::after,
+.line b::before {
     content: '';
     display: block;
     width: 7px;
@@ -404,8 +417,12 @@ section {
 
 #NEW_show li:hover {
     /* border: 1px solid gray; */
-    transition: all 0.1s;
-    box-shadow: 0px 0px 3px;
+    /* transition: all 0.1s;
+    box-shadow: 0px 0px 3px; */
+    transition: all 0.5s;
+    border: 1px solid solid;
+    box-shadow: 0px 2px 20px 1px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
 
 #NEW_show li p {

@@ -210,6 +210,16 @@ a {
 .smpic>li {
     width: 72px;
     height: 72px;
+    cursor: pointer;
+}
+
+.smpic>li:first-child {
+    border: 1px solid #ccc;
+}
+
+.smpic>li>img {
+    width: 60px;
+    height: 60px;
 }
 
 

@@ -73,7 +73,7 @@
     let $btnLeft = $('.banner_left'); //右边按钮
     let $btnRight = $('.banner_right'); //右边按钮
     let $picList = $('#banner ul li'); //图片
-    let $banner_menu = $('#banner_menu')//轮播按钮
+    let $banner_menu = $('#banner_menu') //轮播按钮
     let index = null;
     let timer = null;
     let timerrun = null;
@@ -130,37 +130,38 @@
             $btnRight.click()
         }, 3000)
     })
+
     $banner_menu.hover(function() {
         clearTimeout(timerrun)
+        console.log('1');
     }, function() {
         timerrun = setInterval(function() {
             $btnRight.click()
         }, 3000)
     })
-})(jQuery)
-;
+})(jQuery);
 //Tab切换部分
-(function($){
+(function($) {
     //首先先把需要的元素取到
     $Hot_button = $('#Hot_button li'); //所有的按钮
-    $HOt_TAB_ALL = $('.HOt_TAB_item');//所有需要切换的页面
-    $sjx = $('#HOt_TAB_ALL>.sjx')//三角形
+    $HOt_TAB_ALL = $('.HOt_TAB_item'); //所有需要切换的页面
+    $sjx = $('#HOt_TAB_ALL>.sjx') //三角形
     $more = $('#MORE span')
-    $sjxleft = parseInt($sjx.css('left'))//原本的left值
-    $Hot_button.on('mouseover',function(){
+    $sjxleft = parseInt($sjx.css('left')) //原本的left值
+    $Hot_button.on('mouseover', function() {
         $HOt_TAB_ALL.eq($(this).index()).addClass('show').siblings('.HOt_TAB_item').removeClass('show');
-        leftmove = 236*$(this).index()
-        $sjx.css('left',$sjxleft+leftmove+'px')
+        leftmove = 236 * $(this).index()
+        $sjx.css('left', $sjxleft + leftmove + 'px')
         $more.html($('#Hot_button h2').eq($(this).index()).html())
     })
 
-//like you
-$likeyou = $('#likeyou');
-$likeyoutop = parseInt($likeyou.css('top'))
-$likeyou.css('top',$likeyoutop+$(window).scrollTop()+'px')
-$(window).on('scroll',function(){
-    $likeyou.stop(true).animate({
-        'top':$likeyoutop+$(window).scrollTop()+'px'
+    //like you
+    $likeyou = $('#likeyou');
+    $likeyoutop = parseInt($likeyou.css('top'))
+    $likeyou.css('top', $likeyoutop + $(window).scrollTop() + 'px')
+    $(window).on('scroll', function() {
+        $likeyou.stop(true).animate({
+            'top': $likeyoutop + $(window).scrollTop() + 'px'
+        })
     })
-})
 })(jQuery)
