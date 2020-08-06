@@ -44,11 +44,9 @@
             <h2 class="title">【男女同款】CTAS Crater Hi 中性</h2>
             <h2 class="price">价格 ¥669.00</h2>
             <div class="df">
-                <img src="https://image.converse.com.cn/resources/product/168600C001/168600C001_1L_NEW.png?2020072304" alt="">
             </div>
             <div class="smimg">
                 <div class="sf"></div>
-                <img src="https://image.converse.com.cn/resources/product/168600C001/168600C001_1H_NEW.png?2020072304" alt="">
             </div>
             <ul class="smpic">
             </ul>
@@ -69,9 +67,9 @@
             <div class="select">
                 <div class="select_left">请输入您的尺码</div>
                 <div class="select_right">
-                    <span>25</span>
+                    <span>请选择尺码</span>
                     <i></i>
-                    <select name="" id="">
+                    <select name="" id="" class="select_size">
                         <option value="">请选择尺码</option>
                         <option value="">35</option>
                         <option value="">35.5</option>
@@ -92,9 +90,9 @@
             <div class="select">
                 <div class="select_left">数量</div>
                 <div class="select_right">
-                    <span>1</span>
+                    <span>请选择数量</span>
                     <i></i>
-                    <select name="" id="">
+                    <select name="" id="" class="select_num">
                         <option value="">请选择数量</option>
                         <option value="">1</option>
                         <option value="">2</option>
@@ -108,7 +106,9 @@
                     </select>
                 </div>
             </div>
-            <div class="shop_btn">立即购买</div>
+            <a href="javascript:;" class="gocar">
+                <div class="shop_btn">立即购买</div>
+            </a>
             <div class="shop_btn">
                 <i></i>
                 <span>添加到购物车</span>
@@ -117,6 +117,7 @@
     </div>
     <div style="height:200px"></div>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <script src="script/details.js"></script>
 </body>
 

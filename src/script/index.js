@@ -63,8 +63,21 @@
     })
 
 
+    //设置头部购物车数量
+    let headerCount = $('.header_container_count') //头部数量
+    let countarr = []
+    let head_count = 0;
+    if ($.cookie('count')) {
+        countarr = $.cookie('count').split(',')
 
+        //遍历购物车数量，把值赋值给圆
+        $.each(countarr, function(index, value) {
+            head_count += parseInt(value)
+        })
+        headerCount.html(head_count)
+    }
 })(jQuery);
+
 //***********轮播效果******************
 (function($) {
     //首先把所有需要的元素取下来

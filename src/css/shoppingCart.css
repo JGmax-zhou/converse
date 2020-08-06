@@ -136,7 +136,7 @@ a {
 
 #shopping {
     width: 1000px;
-    height: 700px;
+    height: auto;
     margin: auto;
     position: relative;
 }
@@ -208,7 +208,7 @@ a {
 /* 关注CONVERSE */
 
 #attention {
-    margin-top: 80px;
+    margin-top: 300px;
     width: 100%;
     height: 300px;
     text-align: center;
@@ -284,6 +284,15 @@ a {
 .shop_list {
     width: 1000px;
     height: auto;
+    /* overflow: hidden; */
+}
+
+.shop_list>li {
+    border-bottom: 1px dashed #ccc;
+}
+
+.shop_list>li:last-child {
+    border-bottom: none;
 }
 
 .shop_list_top {

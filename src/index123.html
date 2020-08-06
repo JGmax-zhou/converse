@@ -16,8 +16,10 @@
             <ul class="header_container_right">
                 <p class="user"><a href="javascirpt:;">登录</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="javascirpt:;">注册</a></p>
                 <li></li>
-                <p><a href="">购物车</a></p>
-                <li class="header_container_count">0</li>
+                <p><a href="http://localhost/JavaScript/converse/src/shoppingCart.html">购物车</a></p>
+                <a href="http://localhost/JavaScript/converse/src/shoppingCart.html" style="color: white;">
+                    <li class="header_container_count">0</li>
+                </a>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -566,7 +568,9 @@
         </div>
     </div>
     <!-- 更多部分 -->
-    <a href="list.html"><div id = 'MORE' class="login_left_more">查看所有<span>男的踩的</span>最新商品</div></a>
+    <a href="list.html">
+        <div id='MORE' class="login_left_more">查看所有<span>男的踩的</span>最新商品</div>
+    </a>
 
     <!-- 新品推荐部分 -->
     <div id="NEW_title">新品推荐</div>
@@ -637,7 +641,7 @@
                 <p>¥469.00</p>
             </li>
         </ol>
-        <ol id="NEW_show" style="border-bottom: 0;";>
+        <ol id="NEW_show" style="border-bottom: 0;" ;>
             <li>
                 <img src="https://image.converse.com.cn/resources/product/569236C001/569236C001_1B_NEW.png?2020072304" alt="">
                 <p>【女的】Chuck 70</p>
@@ -710,6 +714,7 @@
     <!-- 聊聊吧 -->
     <div id="likeyou">11</div>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
     <script src="script/index.js"></script>
     <script src="script/login.js"></script>
     <script src="script/registry.js"></script>
